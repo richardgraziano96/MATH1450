@@ -1,0 +1,4 @@
+1) (x1+x2(...)xk)^n = E(i1+i2(...)+i=m)(i,j >= 0) (n(choose)i1+i2(...)+ik)*x1^i+(...)xk^(i*k)
+SO (2x-y+3z)^4 = E(i1+i2+i2=4)(i,j >= 0)(4(choose)i1+i2+i3)*(2x)^i1*(y)^i2*(3z)^i3
+x^2yz is when i1=2, i2=1 and i3=1 SO the terms are (4(choose)(211))(2x)^2*(-y)^1*(3z)^1 = (4!)/(2!*1!*1!) = 12*4*3x^2y^2z = -144x^2yz
+SO the Coefficient is -144
