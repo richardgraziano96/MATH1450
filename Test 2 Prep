@@ -12,3 +12,5 @@ Solution: RHS: Counts number of subsets {1...n+1} of size k+1
 LHS: It is the number of subsets of size k+1 whose largest element is (i+1)
 
 3)(10 points) Given that i^4 = 24*(i(choose)4)+36*(i(choose)3)+14*(i(choose)2)+(i(choose)1),find a formula for [n(SUM)i=0]*i^4
+
+Solution: 
