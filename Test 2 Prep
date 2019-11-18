@@ -61,4 +61,5 @@ Let k be the smallest subscript Vk(is an element of){V1...V(k+1)} Vk=Vj for some
 8)(10 points) We say a walk in a digraph D = (V, E) is closed if the first and last vertex on the walk are the same. 
 Let v be a vertex in D. Prove that the shortest closed walk starting and ending at v is a cycle.
 
-Solution:
+Solution: Let (V0,V1...Vp) be a shortest walk with V0=Vp=V. **Contradiction** We have Vi = Vj for i /= j say i < j. But the walk
+(V0...Vi,Vj+1...Vp) that is shorter than p(Which is suppose to be the shortest length of such a walk) -><-
