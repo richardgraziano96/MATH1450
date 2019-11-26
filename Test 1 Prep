@@ -1,1 +1,13 @@
+1)(10 points) Is the propositional formula (A ∨ B) ∧ (~A ∨ C) equivalent to the formula B ∧ C ? If the answer is “yes” you should justify
+it, either by writing a truth table for both formulas or by explaining logically why they are equivalent. If the answer is “no” then 
+justify it by writing (at least part of) a truth table.
 
+A | B | C | AUB | ~A^C | (AUB)^(~A^C) | B^C | A^~B | A^C | (A^~B)U(A^C) | A^(~BUC)
+T | T | T |  T  |   F  |      F       |  T  |   F  |  T  |       T      |
+T | T | F |  T  |   F  |      F       |  F  |   F  |  F  |       F      |
+T | F | T |  T  |   F  |      F       |  F  |   T  |  T  |       T      |
+T | F | F |  T  |   F  |      F       |  F  |   T  |  F  |       T      |
+F | T | T |  T  |   T  |      T       |  T  |   F  |  F  |       F      |
+F | T | F |  T  |   F  |      F       |  F  |   F  |  F  |       F      |
+F | F | T |  F  |   F  |      F       |  F  |   F  |  F  |       F      | 
+F | F | F |  F  |   F  |      F       |  F  |   F  |  F  |       F      |
