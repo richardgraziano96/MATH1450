@@ -13,7 +13,7 @@ F | T | T |  T  |   T  |      T       |  T  |   F  |  F  |       F      |    F
 F | T | F |  T  |   F  |      F       |  F  |   F  |  F  |       F      |    F
 F | F | T |  F  |   F  |      F       |  F  |   F  |  F  |       F      |    F
 F | F | F |  F  |   F  |      F       |  F  |   F  |  F  |       F      |    F
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 3)(10 points) Use induction to prove that
 (n(sum)i=1) * (i*2^i) = (n-1)2^(n+1)+2. for all n ≥ 1.
 
@@ -22,7 +22,7 @@ Base Case: n = 1
 LHS: 1*2^1=2. RHS: (1-1)2^(1+1)+2=2.
 Prove that (n+1(sum)i=1) * (i*2^i)= n2^(n+2)+2
 (n+1)2^(n+1)+(n-1)2^(n+1)+2= (2n)2^(n+1)+2= 2n*2^(n+1)+2= n2^(n+2)+2
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 4)(10 points) Use induction to prove that n! > 2n for all n ≥ 4
 
 Solution:
@@ -30,12 +30,35 @@ Base Case: n = 4
 LHS: 4!=24. RHS: 2^4 = 16. 24 > 16
 Assume n! > 2^n and now we prove (n+1)! > 2^(n+1)
 LHS: (n+1)! = (n+1)*n! > (n+1)*2^n We can assume n ≥ 5 so ≥ 2*2^n = 2^(n+1)
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 5)(10 points) Prove or disprove: for all sets A, B and C we have B ⊆ (A ∪ B) − C. If you think the statement isn’t always true, then 
 disprove it by finding specific sets A, B, C where the statement is false.
 
 Solution: We must disprove.
 Choose A = {1,2}, B = {2,3}, C = AUB = {1,2,3}
 So (AUB)-C={null} but {2,3} is not in the null set.
+----------------------------------------------------------------------------------------------------------------------------------------
+6)(10 points) Prove or disprove: if A ⊆ X and B ⊆ Y then A × B ⊆ X × Y . If you think the statement isn’t always true, then disprove 
+it by finding specific sets A, B, X, Y where the statement is false
 
------------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+Assume A ⊆ X and B ⊆ Y, let (a,b) ∈ A*B, so a ∈ A and b ∈ B, so a ∈ X and b ∈ Y. Thus (a,b) ∈ X*Y
+----------------------------------------------------------------------------------------------------------------------------------------
+For the next two problems, assume that f : A → B and g : B → C are total functions, and let h = g ◦ f be the composite function 
+so h : A → C. They are “prove or disprove” problems. If you think the statement isn’t always true, then disprove it by drawing an 
+arrow diagram of specific functions f, g, h where the statement is false.
+
+7)(10 points) Prove or disprove: if f and g are both surjective then h is also surjective.
+
+Solution:
+Assume f and g are surjections, let c ∈ C. Since g is surjective, ∃b∈B with g(b)=c. Since f is a surjection ∃a∈A with f(a)=b. 
+But, h(a)=g(f(a))=g(b)=c so h is surjective.
+----------------------------------------------------------------------------------------------------------------------------------------
+8)(10 points) Prove or disprove: if f is injective and g is surjective then h is a bijection.
+
+Solution:
+If f is an injection and g is surjective then h is a bijection.
+A     B       C         A        C
+* --> *-->        |     * -->
+          --> *   |          --> *
+* --> *-->        |     * -->
