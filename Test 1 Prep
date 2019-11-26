@@ -1,7 +1,8 @@
-1)(10 points) Is the propositional formula (A ∨ B) ∧ (~A ∨ C) equivalent to the formula B ∧ C ? If the answer is “yes” you should justify
-it, either by writing a truth table for both formulas or by explaining logically why they are equivalent. If the answer is “no” then 
-justify it by writing (at least part of) a truth table.
+1)(10 points) Is the propositional formula (A ∨ B) ∧ (~A ∨ C) equivalent to the formula B ∧ C ? If the answer is “yes” you should 
+justify it, either by writing a truth table for both formulas or by explaining logically why they are equivalent. If the answer is 
+“no” then justify it by writing (at least part of) a truth table.
 2)(10 points) Is the propositional formula (A ∧ B¯) ∨ (A ∧ C) equivalent to the formula A ∧ (B¯ ∨ C) ? Justify the same way as # 1
+
 Solution:
 A | B | C | AUB | ~A^C | (AUB)^(~A^C) | B^C | A^~B | A^C | (A^~B)U(A^C) | A^(~BUC)
 T | T | T |  T  |   F  |      F       |  T  |   F  |  T  |       T      |    T
@@ -15,6 +16,7 @@ F | F | F |  F  |   F  |      F       |  F  |   F  |  F  |       F      |    F
 -----------------------------------------------------------------------------------------------------------------------------------------
 3)(10 points) Use induction to prove that
 (n(sum)i=1) * (i*2^i) = (n-1)2^(n+1)+2. for all n ≥ 1.
+
 Solution: 
 Base Case: n = 1
 LHS: 1*2^1=2. RHS: (1-1)2^(1+1)+2=2.
@@ -22,8 +24,18 @@ Prove that (n+1(sum)i=1) * (i*2^i)= n2^(n+2)+2
 (n+1)2^(n+1)+(n-1)2^(n+1)+2= (2n)2^(n+1)+2= 2n*2^(n+1)+2= n2^(n+2)+2
 -----------------------------------------------------------------------------------------------------------------------------------------
 4)(10 points) Use induction to prove that n! > 2n for all n ≥ 4
+
+Solution:
 Base Case: n = 4
 LHS: 4!=24. RHS: 2^4 = 16. 24 > 16
 Assume n! > 2^n and now we prove (n+1)! > 2^(n+1)
 LHS: (n+1)! = (n+1)*n! > (n+1)*2^n We can assume n ≥ 5 so ≥ 2*2^n = 2^(n+1)
+-----------------------------------------------------------------------------------------------------------------------------------------
+5)(10 points) Prove or disprove: for all sets A, B and C we have B ⊆ (A ∪ B) − C. If you think the statement isn’t always true, then 
+disprove it by finding specific sets A, B, C where the statement is false.
+
+Solution: We must disprove.
+Choose A = {1,2}, B = {2,3}, C = AUB = {1,2,3}
+So (AUB)-C={null} but {2,3} is not in the null set.
+
 -----------------------------------------------------------------------------------------------------------------------------------------
