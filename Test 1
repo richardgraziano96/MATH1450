@@ -1,7 +1,7 @@
 1)(10pts.) Is the propositional formula (A^~B)U(A^C) equivalent to the formula A^(~BUC)?  Write a truth table for both formulas. 
 
 Solution:
-A | B | C | (A^~B)U(A^C) | A^(~BUC)| 
+A | B | C | (A^~B)U(A^C) | A^(~BUC)
 T | T | T |       T      |    T
 T | T | F |       F      |    F
 T | F | T |       T      |    T
