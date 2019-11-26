@@ -1,0 +1,20 @@
+1)(10pts.) Is the propositional formula (A^~B)U(A^C) equivalent to the formula A^(~BUC)?  Write a truth table for both formulas. 
+
+Solution:
+A | B | C | (A^~B)U(A^C) | A^(~BUC)| 
+T | T | T |       T      |    T
+T | T | F |       F      |    F
+T | F | T |       T      |    T
+T | F | F |       T      |    T
+F | T | T |       F      |    F
+F | T | F |       F      |    F
+F | F | T |       F      |    F
+F | F | F |       F      |    F
+
+Yes, they are equivalent.
+----------------------------------------------------------------------------------------------------------------------------------------
+(10 points) Use induction to prove that
+(n(sum)i=1)*(i^2) = (n(n+1)(2n+1))/6. for all n ≥ 1.
+
+Solution:
+Base case is n = 1
