@@ -50,4 +50,11 @@ that means f(a) = f(a').  But then since f is injective that means a = a'
 
 6)(10pts.) Prove or disprove:  if h is a bijection ([= 1 arrow in, = 1 arrow out]) then f is a bijection.
 
-Solution: olution:This statement is false.  See the arrow diagram below.gandfare both total functionsandh=gfis a bijection (you should check this).  However,fis not a bijection.
+Solution: This statement is false.  See the arrow diagram below. g and f are both total functions and h = gof is a bijection.
+However, f is not a bijection.
+A     B         C
+* --> *    -->  *   
+              
+* --> *  -->
+            --> *
+      *  --> 
