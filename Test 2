@@ -1,6 +1,6 @@
-1)(30pts.) For this problem, imagine that a bug is standing on the xy-plane. The bug starts at (0,0). If the bug is standing at the point
-(x,y) it can take two types of steps: The bug can move one unit up to the point (x,y+1) or it can move one unit to the right, so it can
-move (x+1,y)
+1)(30pts.) For this problem, imagine that a bug is standing on the xy-plane. The bug starts at (0,0). If the bug is standing at the 
+point (x,y) it can take two types of steps: The bug can move one unit up to the point (x,y+1) or it can move one unit to the right, 
+so it can move (x+1,y)
 
 a)(5pts.) Explain why there are (200 (choose) 100) ways for the bug to get from (0,0) to (100,100).
 
@@ -15,6 +15,8 @@ Solution:
 
 c)(15pts.) How many ways are there to go from (0,0) to (100,100) if the bug must go through at LEAST one of the points (40,50), (50,60),
 (70,90)?
+
+Solution:
 p1:(90 (choose) 40) * (110 (choose) 60) +
 p2:(110 (choose) 50) * (90 (choose) 50) +
 p3:(160 (choose) 70) * (40 (choose) 30) -
@@ -23,3 +25,34 @@ p1 & p3: (90 (choose) 40) * (70 (choose) 30) * (40 (choose) 30) -
 p2 & p3: (110 (choose) 50) * (50 (choose) 20) * (40 (choose) 30) +
 p1 & p2 & p3: (90 (choose) 40) * (20 (choose) 10) * (50 (choose) 20) * (40 (choose) 30)
 ----------------------------------------------------------------------------------------------------------------------------------------
+2)(15pts.) Recall Pascal's Identity, which states that (n(choose)k) = (n-1(choose)k) + (n-1(choose)k-1) Use induction to prove that
+[n(SUM)i=3 (i(choose)3) = ((n+1)(choose)4)]. Base case should be 3
+
+Solution: 
+Base case: n = 3 both sides equal 1. 
+Induction step: Assume [n(SUM)i=3 (i(choose)3) = ((n+1)(choose)4)] 
+so [n+1(SUM)i=3 (i(choose)3) = [n(SUM)i=3 (i(choose)3) + ((n+1)(choose)3)] = ((n+1)(choose)4) + ((n+1)(choose)3) = ((n+2)(choose)4) 
+which is pascal's identity.
+----------------------------------------------------------------------------------------------------------------------------------------
+3)(15pts.) How many solutions (x1,x2,x3,x4) are there to the equation x1+x2+x3+x4=15 such that x1>=0, x2>=1, x3>=1, x4>=2?
+
+Solution: 
+x1+(x2-1)+(x3-1)+(x4-2) = 15-1-1-2 = 11
+(11+4-1(choose)4-1) = (14(choose)3) OR (14(choose)11)
+----------------------------------------------------------------------------------------------------------------------------------------
+4)(15pts.) We have four people. How many ways can we arrange them so that at least one is true:
+i) A is first in line
+ii) B is second in line
+iii) C is third in line
+iv) D is fourth in line
+
+Solution:
+4*3!-6*2!+4*1!-1(*1)
+----------------------------------------------------------------------------------------------------------------------------------------
+5)(15pts.) Let D be a digraph and let u,v be any two vertices, conside a walk that starts at u and ends at v that has the shortest 
+length. Prove that this walk must be a path
+
+Solution:
+Let (U0,U1...Up) be a shortest walk with U1=Xp=V. **Contradiction** We have Ui = Uj for i /= j, i < j. But the walk
+(U0...Ui,Uj+1...Xp) that is shorter than p(Which is suppose to be the shortest length of such a walk) which is a contradiction. Thus
+we can see A shortest walk has to be dist(u,v)
