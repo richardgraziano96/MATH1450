@@ -18,3 +18,9 @@ Yes, they are equivalent.
 
 Solution:
 Base case is n = 1
+Since both are equal to 1 we can continue.
+Assume that the equation is true, using assumption we will need to prove that RHS: (n+1(sum)i=1)*(i^2) = ((n+1)(n+2)(2n+3))/6
+This turns to ((2n^3)+(9n^2)+13n+6)/6
+LHS: (n(sum)i=1)*(i^2)+(n+1)^2 = (n(n+1)(2n+1))/6 + (n+1)^2 = (2n^3+3n^2+n)/6 +(n^2)+2n+1=((2n^3)+(9n^2)+13n+6)/6
+The left and right sides are equal.
+----------------------------------------------------------------------------------------------------------------------------------------
