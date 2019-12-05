@@ -38,4 +38,16 @@ Solution:
 The statement is true. We can prove it by showing that if x∈A^B then x∈BUC. Assume that x∈A^B so we know that both x∈A and x∈B. Since 
 x∈B we know that x∈BUC.
 ----------------------------------------------------------------------------------------------------------------------------------------
+For the next two problems, assume that f: A --> B and g: B --> C are total functions. Let h = gof be the composite function so 
+h: A --> C.  They are "prove or disprove" problems. If you think the statement isn't always true, then disprove it by drawing an 
+arrow diagram of special functions f,g,h where the statement is false.
 
+5)(10pts.) Prove or disprove:  if f and g are both injective ([<=1 arrow in]) then h is injective.
+
+Solution: The statement is true.  Let's prove it.  Suppose f and g are both injective.  We would like to show that h is injective, 
+or in other words that h(a) = h(a') ==> a = a'. So assume we have h(a) = h(a'), meaning that g(f(a)) = g(f(a')). Since g is injective 
+that means f(a) = f(a').  But then since f is injective that means a = a'
+
+6)(10pts.) Prove or disprove:  if h is a bijection ([= 1 arrow in, = 1 arrow out]) then f is a bijection.
+
+Solution: olution:This statement is false.  See the arrow diagram below.gandfare both total functionsandh=gfis a bijection (you should check this).  However,fis not a bijection.
