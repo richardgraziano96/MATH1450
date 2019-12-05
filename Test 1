@@ -31,7 +31,7 @@ Base case is n = 1. Since (1+a)^1 >= 1+1*a we are okay. Next we assume that the 
 (1+a)^(n+1) >= 1+(n+1)*a
 (1+a)^(n+1) = (1+a)^n*(1+a) >= (1+na)(1+a) = 1+na+a+na^2 = 1+(n+1)a+na^2 >= 1(n+1)*a so it is true.
 ----------------------------------------------------------------------------------------------------------------------------------------
-4)(10pts.) Prove or Disprove: for any sets A,B,C we have A^B (subset) BUC. If you think the statement isn't always true, then disprove
+4)(10pts.) Prove or Disprove: for any sets A,B,C we have A^B ⊆ BUC. If you think the statement isn't always true, then disprove
 it by finding specific sets A,B,C where the statement is false.
 
 Solution:
