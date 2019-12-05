@@ -1,0 +1,25 @@
+1)(30pts.) For this problem, imagine that a bug is standing on the xy-plane. The bug starts at (0,0). If the bug is standing at the point
+(x,y) it can take two types of steps: The bug can move one unit up to the point (x,y+1) or it can move one unit to the right, so it can
+move (x+1,y)
+
+a)(5pts.) Explain why there are (200 (choose) 100) ways for the bug to get from (0,0) to (100,100).
+
+Solution:
+The bug takes 200 steps (100 up, 100 right) so you have to choose which 100 steps are up.
+
+b)(10pts.) How many ways are there to go from (0,0) to (100,100) if the bug MUST go through the point (20,30)?
+
+Solution:
+(50 (choose) 20) [50 possible moves must choose 20 of them] * (150 (choose) 80) 
+[200 total moves minus the 50 moves 100 choose moves minus the 20 moves from before]
+
+c)(15pts.) How many ways are there to go from (0,0) to (100,100) if the bug must go through at LEAST one of the points (40,50), (50,60),
+(70,90)?
+p1:(90 (choose) 40) * (110 (choose) 60) +
+p2:(110 (choose) 50) * (90 (choose) 50) +
+p3:(160 (choose) 70) * (40 (choose) 30) -
+p1 & p2: (90 (choose) 40) * (20 (choose) 10) * (90 (choose) 50) -
+p1 & p3: (90 (choose) 40) * (70 (choose) 30) * (40 (choose) 30) -
+p2 & p3: (110 (choose) 50) * (50 (choose) 20) * (40 (choose) 30) +
+p1 & p2 & p3: (90 (choose) 40) * (20 (choose) 10) * (50 (choose) 20) * (40 (choose) 30)
+----------------------------------------------------------------------------------------------------------------------------------------
