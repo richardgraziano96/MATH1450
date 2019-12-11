@@ -25,5 +25,31 @@ T(n) = 8T(n/4)+n^(3/2)ln(n).
 By “estimate” we mean that your answer should be T(n) = Θ(g(n)) for some specific function g(n) that you get from the Master Theorem.
 
 Solution:
-Note that log4(8) = 3/2. Meanwhile we have a function f(n) = n^(3/2)ln(n) so we are in case (ii) with k = 1 (see master theorem handout).
+Note that log4(8) = 3/2. Meanwhile we have a function f(n) = n^(3/2)ln(n) so we are in case (ii) with k = 1 (see master theorem handout)
 Therefore T(n) = Θ(n^(3/2)ln^(2)n))
+----------------------------------------------------------------------------------------------------------------------------------------
+
+a(n)=5a(n−1)−6a(n−2) for n≥2, a0 = 1, a1 = 0
+Characteristic equation: r^2 − 5r + 6 = 0
+Determinant: 5^2 − 4(1)(6) = 25−24 = 1
+Since our determinant is greater than 0, we know we can use Theorem 1.
+Find the characteristic root.
+We can factor r^2 − 5r + 6 = 0 into (r − 2)(r − 3) = 0.
+So our roots are r1 = 2 and r2 = 3.
+Use Theorem 1 to find our general solution: an = α(1)2^n + α(2)3^n for some constants α1 and α2.
+Find α1 and α2 by using our initial conditions.
+For a0 = 1
+1 = α(1)2^0 + α(2)3^0
+1 = α1 + α2
+For a1 = 0
+0 = α(1)2^1 + α(2)3^1
+0 = 2α1 + 3α2
+Solve the system of equations:
+α1 = 1 − α2
+0 = 2(1 − α2) + 3α2
+0 = 2 − 2α2 + 3α2
+0 = 2 + α2
+α2 = −2
+α1 = 1 − (−2)
+α1 = 3
+Our solution is an = 3·2^n −2*3^n
