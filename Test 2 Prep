@@ -4,40 +4,30 @@ Solution: (x1+x2(...)xk)^n = (SUM)(i1+i2(...)+i=m)(i,j >= 0) (n(choose)i1+i2(...
 SO (2x-y+3z)^4 = (SUM)(i1+i2+i2=4)(i,j >= 0)(4(choose)i1+i2+i3)*(2x)^i1*(y)^i2*(3z)^i3
 (x^2)*y*z is when i1=2, i2=1 and i3=1 SO the terms are (4(choose)(211))(2x)^2*(-y)^1*(3z)^1 = (4!)/(2!*1!*1!) = 12*4*3x^2y^2z = -144x^2yz
 SO the Coefficient is -144
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 2)(10 points) Use any method to prove the “hockey stick identity” (below):
 [n(SUM)i=k (n(choose)k) = ((n+1)(choose)(k+1))]
 
 Solution: 
 RHS: Counts number of subsets {1...n+1} of size k+1
 LHS: It is the number of subsets of size k+1 whose largest element is (i+1)
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 3)(10 points) Given that i^4 = 24*(i(choose)4)+36*(i(choose)3)+14*(i(choose)2)+(i(choose)1),find a formula for [n(SUM)i=0]*i^4
 NOTE: [0(SUM)i=0(i(choose)k) = ((n+1)(choose)(k+1)) and if i < k (i(choose)k = 0 n(SUM)i=k (n(choose)k) = ((n+1)(choose)(k+1))]
 
 Solution: 24*(n+1(choose)5)+36(n+1(choose)4)+14*(n+1(choose)3)+(n+1(choose)2)
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 4)(10 points) How many ways can we arrange the letters M, A, T, H, I, S, F, U, and N such that none of the words “MATH,” “IS,” or “FUN” 
 appear consecutively? For example we do not count the arrangement SFUMATHNI because “MATH” appears consecutively
 
 Solution: 9! without rules. Then we set S1 = "MATH", S2 = "IS", S3 = "FUN" |S1(UNION)S2(UNION)S3| = 8!+7!+6!-6!-5!-4!+3! then we 
 subtract those from the ways without rules and get 9!-(8!+7!+6!-6!-5!-4!+3!).
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 5)(10 points) How many solutions (x1, x2, x3, x4) are there to the equation **x1 + x2 + x3 + x4 = 13** such that x1, x2, x3 and x4 are
 all positive integers?
 
 Solution: Look at Pirates and Gold. Ideal substitute y1 = xi-1 for i = 1,2,3,4. y1+y2+y3+y4 = 9 thus (9+4-1(choose)9) = (12(choose)9)
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 6) (10 points) We have five people A, B, C, D and E. How many ways can we arrange them in a line so that at least one of the following
 is true:
 (i) A is third in line
@@ -47,17 +37,13 @@ is true:
 
 Solution: S1->A is third, S2->B is fifth, S3->C is third, S4->D is forth |S1,2,3,4| = 4! so 4*4!-5*3!+2*2!-0 
 |Si|-|Si(UNION)Sj|+|Si(UNION)Sj(UNION)Sk|-|Si(UNION)Sj(UNION)Sk(UNION)Sl|
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 7)(10 points) Suppose D = (V, E) is a digraph in which every vertex has outdegree at least 1. Prove that D contains a cycle.
 
 Solution: V1(is an element of)V, and let V2 be any vertex such that (V1->V2)(Since V1 has outdegree >= 1 we can find such a V2)
 Let V(i+1) be any vertex (Vi -> V(i+1)). However, since V is finite we must have some Vk = Vj where k/=j.
 Let k be the smallest subscript Vk(is an element of){V1...V(k+1)} Vk=Vj for some j < k. SO D has the cycle (Vj, V(j+1)..V(k+1),Vi)
-
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 8)(10 points) We say a walk in a digraph D = (V, E) is closed if the first and last vertex on the walk are the same. 
 Let v be a vertex in D. Prove that the shortest closed walk starting and ending at v is a cycle.
 
