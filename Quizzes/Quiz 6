@@ -1,0 +1,18 @@
+1.(15 points) Let S = {1,2...20}
+
+a) How many subsets A ⊆ S are there such that |A|, 2∈A and 5∈A?
+
+Solution: (18 choose 8)
+
+b) How many subsets B ⊆ S are there such that |B|, 2 and the sum of the elements of B is odd?
+
+Solution: 10*10
+
+c) How many subsets C ⊆ S are there such that |C|, 2 and the sum of the elements of C is even?
+
+Solution: (10(choose)2) + (10(choose)2)
+----------------------------------------------------------------------------------------------------------------------------------------
+2.(5 points) Give a combinatorial proof that k(n(choose)k) = n(n-1(choose)k-1)
+
+Solution: LHS: k = Special number/multiplier. (n(choose)k) class subset. 
+RHS: n = special number/multiplier. n(n-1(choose)k-1) = choose rest
