@@ -1,0 +1,21 @@
+1.(10 points) Five people whose names are p1,p2,p3,p4 and p5 stand in a line. They would like to make sure that at least one of the
+following conditions are true: 
+i) p1 is first,
+ii) p2 is second, or
+iii) p3 is third
+
+Solution:
+4!+4!+4!-3!-3!-3!+2
+----------------------------------------------------------------------------------------------------------------------------------------
+2.(10 points) Use any method to prove that for all natural numbers n≥1 that (n(sum)k=1)*k(n(choose)k)=n*2^(n-1)
+
+Solution: 
+We can interpret this combinatorially as the number of ways to form a committee (of any size) with one chairman out of a group of n 
+people.
+
+From n people we first pick a committee of size i, then choose one the i committee members to be the chairman. There are (ni) options 
+for the members of the committee, after which there are i options for the chairman. If we sum over all i from 1 to n, that covers 
+committees of all possible (nonzero) sizes. So, we have ∑ni=1(ni)i.
+
+On the other hand, we could first pick one person from the n people to be the chairman. Then for each of the remaining unchosen n−1 people,
+they can be either in or out of the committee. That's 2n−1 possibilities. So, we have n2n−1.
