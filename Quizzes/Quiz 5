@@ -1,1 +1,9 @@
 1. (10 points) Suppose A,B,C are sets and f:A->B and g:B->C are total functions. Let h=gof
+
+a) Prove that if h is surjective, then g is surjective.
+Solution: Suppose h is surjective, let z∈C. Since h is surjective there exists an x∈A such that h(x)=g(f(x)) = z.
+If we let y=f(x)∈B then g(x) = z. Therefore g is surjective.
+
+b) Prove that if h is injective, then f is injective
+Solution: Suppose h is injective. We let x1,x2∈A let f(x1)=f(x2). h(x1)=g(f(x1))=g(f(x2))=h(x1) Since h is injective it 
+implies x1=x2 thus f is injective.
