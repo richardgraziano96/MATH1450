@@ -1,0 +1,13 @@
+1.(10 points)  Let G = (V, E) be a graph. Recall that dist(u, v) is the length of the shortest path in G that starts at u and ends at 
+v (we say dist(u, v) is infinity if there is no path from u to v). Is it possible that dist(u, v) 6= dist(v, u)? If it is possible then 
+draw an example. If it is not possible then prove it.
+
+Solution:
+Yes it is possible. If we draw an arrow from u -> v but make it impossible for v to actually return the arrow we make Dist(u,v) possible
+but Dist(v,u) impossible
+----------------------------------------------------------------------------------------------------------------------------------------
+2.(10 points) Let G be a digraph and let x,u,v be any three vertices. Prove that dist(u,v) <= dist(u,x) + dist(x,v)
+
+Solution:
+We can find a walk from u to v as follows: first take a walk of length dist(u,x) then take a walk of length dist(x,v) In total we get
+a walk of length dist(u,x)+dist(x,v)
