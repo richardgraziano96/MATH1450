@@ -1,0 +1,5 @@
+2. (10 points) Suppose S,T,Q are sets. Prove that S*(TUQ) = (S*T)U(S*Q)
+
+Solution:
+Split down the middle. LHS: x∈S * x∈T or x∈Q = P*WUR. RHS: x∈S * x∈T or x∈S * x∈Q = (P*W)U(P*R) collect like terms. P*(WUR) which is 
+equal.
