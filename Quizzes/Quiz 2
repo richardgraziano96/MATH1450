@@ -1,0 +1,5 @@
+1.(10 points) Prove that if x and y are real numbers, then max(x,y) = (x+y+|y-x|)/2
+
+Solution:
+x>=y 1.1 max(x,y)=x, (x+y+|y-x|)/2, (x+y+-|y-x|)/2 = x
+x<=y 2.1 max(x,y)=y, (x+y+|y-x|)/2, (x+y+|y-2|)/2 = y
