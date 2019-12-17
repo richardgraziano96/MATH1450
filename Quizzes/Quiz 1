@@ -1,1 +1,21 @@
+1.(10 points) Is the propositional formula A^(BUC) equivalent to the formula AU(B^C)? Justify.
 
+A | B | C | A^(BUC) | AU(B^C)
+T | T | T |    T    |    T
+T | T | F |    T    |    T
+T | F | T |    T    |    T
+T | F | F |    F    |    T  <---
+F | T | T |    F    |    T  <--- No. In at least two places (arrows) one is true while the other is false.
+F | T | F |    F    |    F
+F | F | T |    F    |    F
+F | F | F |    F    |    F
+----------------------------------------------------------------------------------------------------------------------------------------
+2.(10 points) Is the propositional formula ~A+oB equal to the formula A+o~B? Justify.
+
+A | B | ~A | ~B | ~A+oB | A+o~B
+T | T |  F |  F |   T   |   T
+T | F |  F |  T |   F   |   F
+F | T |  T |  F |   F   |   F
+F | F |  T |  T |   T   |   T
+
+They are equal as they have the same truth table.
