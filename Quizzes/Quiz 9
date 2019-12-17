@@ -1,0 +1,31 @@
+1. (10 points) Let G = (V, E) be a graph. Recall that dist(u, v) is the length of the shortest path in G that starts at u and ends at v 
+(we say dist(u, v) is infinity if there is no path from u to v). Is it possible that dist(u, v) 6= dist(v, u)? If it is possible then 
+draw an example. If it is not possible then prove it.
+
+Solution: 
+No, it is not possible. Since edges do not have any specified direction, any path
+starting at u and ending at v can be reversed to be a path (of the same length) starting at v
+and ending at u
+----------------------------------------------------------------------------------------------------------------------------------------
+2. (10 points) Let G = (V, E) be a tree with at least two vertices. Prove that there are two sets of vertices A, B such that 
+A ∪ B = V and such that every edge of G has one endpoint in A and the other endpoint in B.
+Hint: Use induction in a similar way to when we proved that every tree with n vertices has n − 1 edges.
+
+Solution: 
+Base case: we have n = 2 vertices, say u and v. The only possible way to make a tree is to have the edge hu − vi. 
+Make our sets A = {u} and B = {v}. Now every edge (there’s only one edge) has one end in A and the other in B.
+Induction step: assume the statement holds for all trees on n vertices, and let T be a tree with n + 1 vertices. We know that T has a 
+leaf, say v, and that T − v is a tree with n vertices (we proved these in class). So we know that the vertices of T − v can be split 
+into two sets, say A' and B' such that every edge of T − v has one end in A' and the other in B'. Now we will use A' and B'
+to form our sets A and B. v is a leaf so it has only one neighbor in T, say the neighbor of v is u. Either u ∈ A' or u ∈ B'. If u ∈ A'
+then we let A = A' and B = B' ∪ {v} (You should convince yourself that this choice of A, B does what we want it to do: check that every 
+edge in T has one end in A and the other in B). If u ∈ B' then we let A = A' ∪ {v} and B = B' (check that this also works).
+
+----------------------------------------------------------------------------------------------------------------------------------------
+3.(10 points) Use the Master Theorem to give an estimate of T(n) where
+T(n) = 8T(n/4)+n^(3/2)ln(n).
+By “estimate” we mean that your answer should be T(n) = Θ(g(n)) for some specific function g(n) that you get from the Master Theorem.
+
+Solution:
+Note that log4(8) = 3/2. Meanwhile we have a function f(n) = n^(3/2)ln(n) so we are in case (ii) with k = 1 (see master theorem handout)
+Therefore T(n) = Θ(n^(3/2)ln^(2)n))
